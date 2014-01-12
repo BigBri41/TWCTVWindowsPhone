@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<appSettings>
+  <add key="AppglideConfigFileUrl" value="http://cfg.ag.timewarnercable.com:8080/cfg/sl/20161882_4b7c4bccc7bb7dac2bbfc25272a77e5f" />
+  <add key="AppglideWaitThreshold" value="5"/>
+  <add key="AppglideInitialDebug" value="false" />
+</appSettings>

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMF_SmoothStreaming1", "SMF_SmoothStreaming1\SMF_SmoothStreaming1.csproj", "{30CBD3FE-2977-4A12-B2A2-097666E2F523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMF_SmoothStreaming1.Web", "SMF_SmoothStreaming1.Web\SMF_SmoothStreaming1.Web.csproj", "{EBC01574-FDD4-4993-B3FA-23387EF475AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{30CBD3FE-2977-4A12-B2A2-097666E2F523}.Release|Windows Phone.ActiveCfg = Release|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EBC01574-FDD4-4993-B3FA-23387EF475AD}.Release|Windows Phone.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

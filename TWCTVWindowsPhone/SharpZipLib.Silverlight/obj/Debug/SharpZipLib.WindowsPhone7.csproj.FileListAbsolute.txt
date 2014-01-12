@@ -1,0 +1,8 @@
+C:\programs\WindowsPhoneAppsNew\SharpZipLib\Bin\Debug\SharpZipLib.WindowsPhone7.dll
+C:\programs\WindowsPhoneAppsNew\SharpZipLib\Bin\Debug\SharpZipLib.WindowsPhone7.pdb
+C:\programs\WindowsPhoneAppsNew\SharpZipLib\SharpZipLib.Silverlight\obj\Debug\SharpZipLib.WindowsPhone7.dll
+C:\programs\WindowsPhoneAppsNew\SharpZipLib\SharpZipLib.Silverlight\obj\Debug\SharpZipLib.WindowsPhone7.pdb
+C:\programs\WindowsPhoneAppsNew\TWCTVWindowsPhone\Bin\Debug\SharpZipLib.WindowsPhone7.dll
+C:\programs\WindowsPhoneAppsNew\TWCTVWindowsPhone\Bin\Debug\SharpZipLib.WindowsPhone7.pdb
+C:\programs\WindowsPhoneAppsNew\TWCTVWindowsPhone\SharpZipLib.Silverlight\obj\Debug\SharpZipLib.WindowsPhone7.dll
+C:\programs\WindowsPhoneAppsNew\TWCTVWindowsPhone\SharpZipLib.Silverlight\obj\Debug\SharpZipLib.WindowsPhone7.pdb

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C13B995-416E-4946-9886-173465F71551}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>TWC.OVP</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="Caliburn.Micro" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Core" />
+    <Reference Include="Microsoft.Web.Media.SmoothStreaming" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Plugins" />
+    <Reference Include="TWC.OVP.Framework" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Utilities" />
+    <Reference Include="System" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="TWC\OVP\App.cs" />
+    <Compile Include="TWC\OVP\AppMode.cs" />
+    <Compile Include="TWC\OVP\Behaviors\PlayerCommand.cs" />
+    <Compile Include="TWC\OVP\Behaviors\PlayerBehaviors.cs" />
+    <Compile Include="TWC\OVP\Behaviors\TimelineBehaviors.cs" />
+    <Compile Include="TWC\OVP\Bootstrapper.cs" />
+    <Compile Include="TWC\OVP\Controls\VideoPlayer.cs" />
+    <Compile Include="TWC\OVP\Controls\AesopVideoPlayer.cs" />
+    <Compile Include="TWC\OVP\Controls\AssetInfoBubbleContents.cs" />
+    <Compile Include="TWC\OVP\Controls\CustomKeyboardListBox.cs" />
+    <Compile Include="TWC\OVP\Controls\DebuggingTools\DebugPanel.cs" />
+    <Compile Include="TWC\OVP\Controls\OnDemandController.cs" />
+    <Compile Include="TWC\OVP\Controls\ErrorMessageBox.cs" />
+    <Compile Include="TWC\OVP\Controls\LoadingPanelControl.cs" />
+    <Compile Include="TWC\OVP\Controls\PopupContents\CaptionSettingsPopupContents.cs" />
+    <Compile Include="TWC\OVP\Controls\VideoPlayerPlaylistItem.cs" />
+    <Compile Include="TWC\OVP\WatermarkTextBox.cs" />
+    <Compile Include="TWC\OVP\Decryption\AESDecryptingCacheFullRequest.cs" />
+    <Compile Include="TWC\OVP\Decryption\AESOVPRequestDecryptingCache.cs" />
+    <Compile Include="TWC\OVP\Diagnostics\BufferingTimeMonitor.cs" />
+    <Compile Include="TWC\OVP\Controls\TextTimeline.cs" />
+    <Compile Include="TWC\OVP\Controls\MediaMarkerManager!1.cs" />
+    <Compile Include="TWC\OVP\Controls\VideoPlayerErrorEventArgs.cs" />
+    <Compile Include="TWC\OVP\Controls\VideoPlayerCaptionBlockRegion.cs" />
+    <Compile Include="TWC\OVP\Controls\VideoPlayerCaptionsPresenter.cs" />
+    <Compile Include="TWC\OVP\Decryption\CacheItem.cs" />
+    <Compile Include="TWC\OVP\Decryption\AESDecryptingCache.cs" />
+    <Compile Include="TWC\OVP\Decryption\AESDecryptionInfo.cs" />
+    <Compile Include="TWC\OVP\Decryption\CacheAsyncResult.cs" />
+    <Compile Include="TWC\OVP\Diagnostics\PlayerDiagnostics.cs" />
+    <Compile Include="TWC\OVP\Messages\ChannelBrowserScrollMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\OutOfHomeStatusChangedMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGAdStoppedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGBitRateChangedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGBufferingStartedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGBufferingEndedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGClosedCaptioningToggledEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGInfoOverlayToggledEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGPlaybackStartedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGPlaybackStoppedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGPlayerMuteToggledEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGPlayerPauseToggledEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGPlayerVolumeChangedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGStreamFailedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGStreamURIObtainedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGViewModeChangedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGChannelListChannelSelectedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGChannelListScrolledEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGFilterListFilterModeChangedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGPlaybackRestartedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGContentPlayedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGStreamScrubbedMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\LocationChangedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\LocationChangeAcknowledgedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\MediaEndedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\FocusRequiredEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\RSNStreamStartedEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\RSNPlayerBeaconEventMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\EGServiceErrorOccured.cs" />
+    <Compile Include="TWC\OVP\Messages\EGUserMessageDisplayed.cs" />
+    <Compile Include="TWC\OVP\Messages\SelectChannelMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\ErrorMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\MessagePriority.cs" />
+    <Compile Include="TWC\OVP\Messages\ErrorMessageType.cs" />
+    <Compile Include="TWC\OVP\Messages\MessageText.cs" />
+    <Compile Include="TWC\OVP\Messages\ActionTipText.cs" />
+    <Compile Include="TWC\OVP\Messages\PlaybackPositionChangedMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\PlayStateChangedMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\SettingsChangedMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\StartOnDemandStreamMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\StartLiveStreamMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\TogglePlayMessage.cs" />
+    <Compile Include="TWC\OVP\Messages\UserInteractionMessage.cs" />
+    <Compile Include="TWC\OVP\Models\AssetUriInfoHeader.cs" />
+    <Compile Include="TWC\OVP\Models\AssetInfoHeader.cs" />
+    <Compile Include="TWC\OVP\Models\AssetUriInfo.cs" />
+    <Compile Include="TWC\OVP\Models\AegisRefresh.cs" />
+    <Compile Include="TWC\OVP\Models\Network.cs" />
+    <Compile Include="TWC\OVP\Models\Genre.cs" />
+    <Compile Include="TWC\OVP\Models\AssetDetails.cs" />
+    <Compile Include="TWC\OVP\Models\Category.cs" />
+    <Compile Include="TWC\OVP\Models\Hls.cs" />
+    <Compile Include="TWC\OVP\Models\Smooth.cs" />
+    <Compile Include="TWC\OVP\Models\Streams.cs" />
+    <Compile Include="TWC\OVP\Models\FastForward.cs" />
+    <Compile Include="TWC\OVP\Models\TricksMode.cs" />
+    <Compile Include="TWC\OVP\Models\AssetInfo.cs" />
+    <Compile Include="TWC\OVP\Models\BehindOwnModem.cs" />
+    <Compile Include="TWC\OVP\Models\ChannelExtensions.cs" />
+    <Compile Include="TWC\OVP\Models\ChannelLogo.cs" />
+    <Compile Include="TWC\OVP\Models\Episode.cs" />
+    <Compile Include="TWC\OVP\Models\EpisodeData.cs" />
+    <Compile Include="TWC\OVP\Models\EpisodeResult.cs" />
+    <Compile Include="TWC\OVP\Models\EpisodeDetail.cs" />
+    <Compile Include="TWC\OVP\Models\Details.cs" />
+    <Compile Include="TWC\OVP\Models\Sap.cs" />
+    <Compile Include="TWC\OVP\Models\Subtitled.cs" />
+    <Compile Include="TWC\OVP\Models\Dubbed.cs" />
+    <Compile Include="TWC\OVP\Models\Ratings.cs" />
+    <Compile Include="TWC\OVP\Models\Advisories.cs" />
+    <Compile Include="TWC\OVP\Models\EpisodeCast.cs" />
+    <Compile Include="TWC\OVP\Models\Credit.cs" />
+    <Compile Include="TWC\OVP\Models\GenreInfo.cs" />
+    <Compile Include="TWC\OVP\Models\Genres.cs" />
+    <Compile Include="TWC\OVP\Models\GenreData.cs" />
+    <Compile Include="TWC\OVP\Models\GenreServiceInfo.cs" />
+    <Compile Include="TWC\OVP\Models\GenreServices.cs" />
+    <Compile Include="TWC\OVP\Models\GenreServiceData.cs" />
+    <Compile Include="TWC\OVP\Models\Stream.cs" />
+    <Compile Include="TWC\OVP\Models\Channel.cs" />
+    <Compile Include="TWC\OVP\Models\ChannelList.cs" />
+    <Compile Include="TWC\OVP\Models\Location.cs" />
+    <Compile Include="TWC\OVP\Models\Title.cs" />
+    <Compile Include="TWC\OVP\Models\Description.cs" />
+    <Compile Include="TWC\OVP\Models\Release.cs" />
+    <Compile Include="TWC\OVP\Models\Link.cs" />
+    <Compile Include="TWC\OVP\Models\Person.cs" />
+    <Compile Include="TWC\OVP\Models\Cast.cs" />
+    <Compile Include="TWC\OVP\Models\Link2.cs" />
+    <Compile Include="TWC\OVP\Models\Person2.cs" />
+    <Compile Include="TWC\OVP\Models\Crew.cs" />
+    <Compile Include="TWC\OVP\Models\Image.cs" />
+    <Compile Include="TWC\OVP\Models\ReviewProperty.cs" />
+    <Compile Include="TWC\OVP\Models\Review.cs" />
+    <Compile Include="TWC\OVP\Models\Reviews.cs" />
+    <Compile Include="TWC\OVP\Models\Program.cs" />
+    <Compile Include="TWC\OVP\Models\WhatsOn.cs" />
+    <Compile Include="TWC\OVP\Models\WhatsOnItems.cs" />
+    <Compile Include="TWC\OVP\Models\WhatsOnList.cs" />
+    <Compile Include="TWC\OVP\ScriptBridge.cs" />
+    <Compile Include="TWC\OVP\Services\CookieHelper.cs" />
+    <Compile Include="TWC\OVP\Services\ISettingsService.cs" />
+    <Compile Include="TWC\OVP\Services\LiveTVService.cs" />
+    <Compile Include="TWC\OVP\Services\LocationService.cs" />
+    <Compile Include="TWC\OVP\Services\WebRequestResult.cs" />
+    <Compile Include="TWC\OVP\Services\JsonRequestResult!1.cs" />
+    <Compile Include="TWC\OVP\Services\OVPClientHttpRequest.cs" />
+    <Compile Include="TWC\OVP\Services\JsonService.cs" />
+    <Compile Include="TWC\OVP\Services\SettingsService.cs" />
+    <Compile Include="TWC\OVP\TraceLogWriter.cs" />
+    <Compile Include="TWC\OVP\Controls\AESPlaylistItem.cs" />
+    <Compile Include="TWC\OVP\Utilities\RetryIntervalManager.cs" />
+    <Compile Include="TWC\OVP\Utilities\QueryStringHelper.cs" />
+    <Compile Include="TWC\OVP\Utilities\VisualTreeHelperEx.cs" />
+    <Compile Include="TWC\OVP\ViewModels\AssetViewerViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\AssetViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\InteractionViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\BaseShellViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\AssetInfoViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\CaptionSettingsViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\ChannelBrowserViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\Filter.cs" />
+    <Compile Include="TWC\OVP\ViewModels\ChannelLogoViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\ChannelViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\PlayerViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\OnDemandShellViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\LiveTVShellViewModel.cs" />
+    <Compile Include="TWC\OVP\ViewModels\SportsNetworkShellViewModel.cs" />
+    <Compile Include="TWC\OVP\Views\AssetViewerView.cs" />
+    <Compile Include="TWC\OVP\Views\InteractionView.cs" />
+    <Compile Include="TWC\OVP\Views\LiveAssetInfoView.cs" />
+    <Compile Include="TWC\OVP\Views\CaptionSettingsView.cs" />
+    <Compile Include="TWC\OVP\Views\ChannelBrowserView.cs" />
+    <Compile Include="TWC\OVP\Views\PlayerView.cs" />
+    <Compile Include="TWC\OVP\Views\OnDemandShellView.cs" />
+    <Compile Include="TWC\OVP\Views\LiveTVShellView.cs" />
+    <Compile Include="TWC\OVP\Views\SportsNetworkShellView.cs" />
+    <EmbeddedResource Include="TWC.OVP.g.resources" />
+  </ItemGroup>
+</Project>

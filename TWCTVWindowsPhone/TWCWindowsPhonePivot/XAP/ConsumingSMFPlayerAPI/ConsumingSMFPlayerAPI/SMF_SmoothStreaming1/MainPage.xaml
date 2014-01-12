@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="SMF_SmoothStreaming1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:smf="http://schemas.microsoft.com/smf/2010/xaml/player"
+    xmlns:media="clr-namespace:Microsoft.SilverlightMediaFramework.Core.Media;assembly=Microsoft.SilverlightMediaFramework.Core">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="btnPlay" Height="30" Width="70" Content="Play" Click="btnPlay_Click"/>
+            <Button x:Name="btnReplay" Height="30" Width="70" Content="Replay" Click="btnReplay_Click"/>
+            <Button x:Name="btnRW" Height="30" Width="70" Content="RW"/>
+            <Button x:Name="btnFF" Height="30" Width="70" Content="FF"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button x:Name="btnPreviousPlaylistItem" Height="30" Width="70" Content="Previous" Click="btnPreviousPlaylistItem_Click"/>
+            <Button x:Name="btnNextPlaylistItem" Height="30" Width="70" Content="Next" Click="btnNextPlaylistItem_Click"/>
+            <ToggleButton x:Name="btnToggleCaptions" Height="30" Width="70" Content="Toggle CC" Click="btnToggleCaptions_Click"/>
+            <ToggleButton x:Name="btnFullScreen" Height="30" Width="70" Content="FullScreen" Click="btnFullScreen_Click"/>
+        </StackPanel>
+
+        <smf:SMFPlayer x:Name="player" Grid.Row="2" AutoPlay="False">
+            <smf:SMFPlayer.Playlist>
+                <media:PlaylistItem 
+                    DeliveryMethod="ProgressiveDownload" 
+                    MediaSource="http://ss-lin-20.timewarnercable.com/ANE_HD/index.isml/Manifest?sessionid=b3f01e474a2fe7"/>
+                <media:PlaylistItem 
+                    DeliveryMethod="ProgressiveDownload" 
+                    SelectedCaptionStreamName="textstream_eng"
+                    MediaSource="http://ss-lin-20.timewarnercable.com/ANE_HD/index.isml/Manifest?sessionid=b3f01e474a2fe7"/>
+            </smf:SMFPlayer.Playlist>
+        </smf:SMFPlayer>
+    </Grid>
+</UserControl>

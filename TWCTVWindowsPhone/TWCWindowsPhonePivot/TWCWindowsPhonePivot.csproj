@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD61A551-CCB1-42C6-9D38-ED9B12502F4B}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TWCWindowsPhonePivot</RootNamespace>
+    <AssemblyName>TWCWindowsPhonePivot</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>TWCWindowsPhonePivot.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>TWCWindowsPhonePivot.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Compatibility.Phone, Version=2.2012.605.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Core.Phone, Version=2.2012.605.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Plugins.Phone, Version=2.2012.605.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Plugins.Progressive.Phone, Version=2.2012.605.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Plugins.SmoothStreaming.Phone, Version=2.2012.605.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Plugins.TimedText.Phone, Version=2.2012.605.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SilverlightMediaFramework.Utilities.Phone, Version=2.2012.605.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Media.SmoothStreaming, Version=1.1.837.146, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\TWCModel.cs" />
+    <Compile Include="Helpers\StreamingHelper.cs" />
+    <Compile Include="Helpers\TWCDateHelper.cs" />
+    <Compile Include="Helpers\TWCStaticCalls.cs" />
+    <Compile Include="Helpers\Unzipper.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ItemViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+    <None Include="XAP\TWC.OVP.Player.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dlls\Microsoft.Web.Media.SmoothStreaming.dll" />
+    <Content Include="dlls\Newtonsoft.Json.dll" />
+    <Content Include="README_FIRST.txt" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Resource Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Compatibility.Phone.dll" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Compatibility.Phone.pdb" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Compatibility.Phone.xml" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Core.Phone.dll" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Core.Phone.pdb" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Core.Phone.xml" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.Phone.dll" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.Phone.pdb" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.Phone.xml" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.Progressive.Phone.dll" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.Progressive.Phone.pdb" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.Progressive.Phone.xml" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.SmoothStreaming.Phone.dll" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.SmoothStreaming.Phone.pdb" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.SmoothStreaming.Phone.xml" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.TimedText.Phone.dll" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.TimedText.Phone.pdb" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Plugins.TimedText.Phone.xml" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Utilities.Phone.dll" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Utilities.Phone.pdb" />
+    <Content Include="XAP\smoothStreaming\Microsoft.SilverlightMediaFramework.Utilities.Phone.xml" />
+    <Content Include="XAP\TWC.OVP.Player.xap" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpZipLib.Silverlight\SharpZipLib.WindowsPhone7.csproj">
+      <Project>{7B257BE0-BAA4-4877-800C-05DDDAFB6443}</Project>
+      <Name>SharpZipLib.WindowsPhone7</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

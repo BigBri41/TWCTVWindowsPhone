@@ -1,0 +1,5 @@
+C:\programs\WindowsPhoneAppsNew\TimeWarnerMyTV\TWCWindowsPhonePivot\XAP\ConsumingSMFPlayerAPI\ConsumingSMFPlayerAPI\SMF_SmoothStreaming1.Web\bin\SMF_SmoothStreaming1.Web.dll
+C:\programs\WindowsPhoneAppsNew\TimeWarnerMyTV\TWCWindowsPhonePivot\XAP\ConsumingSMFPlayerAPI\ConsumingSMFPlayerAPI\SMF_SmoothStreaming1.Web\bin\SMF_SmoothStreaming1.Web.pdb
+C:\programs\WindowsPhoneAppsNew\TimeWarnerMyTV\TWCWindowsPhonePivot\XAP\ConsumingSMFPlayerAPI\ConsumingSMFPlayerAPI\SMF_SmoothStreaming1.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\programs\WindowsPhoneAppsNew\TimeWarnerMyTV\TWCWindowsPhonePivot\XAP\ConsumingSMFPlayerAPI\ConsumingSMFPlayerAPI\SMF_SmoothStreaming1.Web\obj\Debug\SMF_SmoothStreaming1.Web.dll
+C:\programs\WindowsPhoneAppsNew\TimeWarnerMyTV\TWCWindowsPhonePivot\XAP\ConsumingSMFPlayerAPI\ConsumingSMFPlayerAPI\SMF_SmoothStreaming1.Web\obj\Debug\SMF_SmoothStreaming1.Web.pdb

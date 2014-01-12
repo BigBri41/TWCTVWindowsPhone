@@ -1,0 +1,25 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="TWC.OVP" EntryPointType="TWC.OVP.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="TWC.OVP" Source="TWC.OVP.dll" />
+    <AssemblyPart x:Name="Caliburn.Micro" Source="Caliburn.Micro.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Drawing" Source="Microsoft.Expression.Drawing.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Interactions" Source="Microsoft.Expression.Interactions.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Core" Source="Microsoft.SilverlightMediaFramework.Core.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Diagnostics" Source="Microsoft.SilverlightMediaFramework.Diagnostics.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Logging" Source="Microsoft.SilverlightMediaFramework.Logging.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Plugins" Source="Microsoft.SilverlightMediaFramework.Plugins.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Plugins.Heuristics" Source="Microsoft.SilverlightMediaFramework.Plugins.Heuristics.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Plugins.SmoothStreaming" Source="Microsoft.SilverlightMediaFramework.Plugins.SmoothStreaming.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Plugins.TimedText" Source="Microsoft.SilverlightMediaFramework.Plugins.TimedText.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Utilities" Source="Microsoft.SilverlightMediaFramework.Utilities.dll" />
+    <AssemblyPart x:Name="Microsoft.Web.Media.SmoothStreaming" Source="Microsoft.Web.Media.SmoothStreaming.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.Composition" Source="System.ComponentModel.Composition.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.Composition.Initialization" Source="System.ComponentModel.Composition.Initialization.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="TWC.OVP.Assets" Source="TWC.OVP.Assets.dll" />
+    <AssemblyPart x:Name="TWC.OVP.Framework" Source="TWC.OVP.Framework.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="System.Xml.Serialization" Source="System.Xml.Serialization.dll" />
+  </Deployment.Parts>
+</Deployment>
